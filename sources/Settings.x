@@ -29,7 +29,7 @@
                titleDescription:@"Display Gonerino toggle button in top navbar"
         accessibilityIdentifier:nil
                        switchOn:[[NSUserDefaults standardUserDefaults] objectForKey:@"GonerinoShowButton"] == nil
-                                    ? YES
+                                    ? NO
                                     : [[NSUserDefaults standardUserDefaults] boolForKey:@"GonerinoShowButton"]
                     switchBlock:^BOOL(YTSettingsCell *cell, BOOL enabled) {
                         [[NSUserDefaults standardUserDefaults] setBool:enabled forKey:@"GonerinoShowButton"];

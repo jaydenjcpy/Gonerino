@@ -196,7 +196,7 @@
     NSMutableArray *retVal = %orig.mutableCopy;
 
     BOOL showButton = [[NSUserDefaults standardUserDefaults] objectForKey:@"GonerinoShowButton"] == nil
-                          ? YES
+                          ? NO
                           : [[NSUserDefaults standardUserDefaults] boolForKey:@"GonerinoShowButton"];
 
     if (showButton) {
@@ -252,7 +252,7 @@
     NSMutableArray *retVal = %orig.mutableCopy;
 
     BOOL showButton = [[NSUserDefaults standardUserDefaults] objectForKey:@"GonerinoShowButton"] == nil
-                          ? YES
+                          ? NO
                           : [[NSUserDefaults standardUserDefaults] boolForKey:@"GonerinoShowButton"];
 
     if (showButton && self.gonerinoButton) {
